@@ -100,7 +100,7 @@ export default class ListUser extends Component {
           </thead>
           <tbody>
             {this.state.users.map((user, index) => (
-              <tr>
+              <tr key={index}>
                 <th scope="row">{index + 1}</th>
                 <td>{user.userId}</td>
                 <td>{user.userName}</td>
